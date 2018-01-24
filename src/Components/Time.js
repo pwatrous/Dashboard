@@ -9,6 +9,14 @@ class Time extends Component {
         };
     }
 
+    componentDidMount() {
+        let newTime;
+        setInterval(() => {
+            newTime = new Date().toLocaleString();
+            this.setState({ date: newTime });
+        }, 1000);
+    }
+
     render() {
         return (
             <div className="time">
