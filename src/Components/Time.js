@@ -20,7 +20,7 @@ class Time extends Component {
     render() {
         return (
             <div className="time">
-                <p>The date is: {this.state.date} </p>
+                <p>{this.state.date} </p>
             </div>
         );
     }
